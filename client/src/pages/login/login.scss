@@ -1,0 +1,43 @@
+.login{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(232, 237, 232);
+
+    .box{
+        width: 300px;
+        border: 1px solid black;
+        padding: 20px;
+    }
+
+    label,input{
+        display: block;
+        width: 100%;
+        padding:8px 0px;
+        margin-block: 8px;
+    }
+
+    input{
+        padding-inline: 8px;
+    }
+
+    .heading{
+        text-align: center;
+    }
+
+    .submit{
+        background-color: rgb(160, 160, 255);
+        color: white;
+        cursor: pointer;
+        font-weight: bold;
+        margin-top: 10px;
+    }
+
+    .submit:hover{
+        background-color:rgb(125, 125, 207);
+    }
+    .text{
+        margin-top: 10px;
+    }
+}
