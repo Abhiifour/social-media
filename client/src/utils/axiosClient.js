@@ -5,7 +5,7 @@ import { showToast } from "../redux/slices/appConfigSlice";
 import { TOAST_FAILURE } from "../App";
 
 export const axiosClient = axios.create({
-  baseURL:'https://social-media-g62d.onrender.com/',
+  baseURL:'https://social-media-g62d.onrender.com',
   withCredentials: true,
 });
 
