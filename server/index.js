@@ -30,7 +30,7 @@ app.use(cookieParser());
 
 app.use(cors({
     credentials:true,
-    origin:'https://social-media-flax-seven.vercel.app/'
+    origin:'https://social-media-flax-seven.vercel.app'
 }))
 
 app.use('/auth' , authRouter);
