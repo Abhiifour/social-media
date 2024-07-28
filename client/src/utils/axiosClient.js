@@ -5,7 +5,7 @@ import { showToast } from "../redux/slices/appConfigSlice";
 import { TOAST_FAILURE } from "../App";
 
 export const axiosClient = axios.create({
-  baseURL:'http://localhost:4000',
+  baseURL:'https://social-media-g62d.onrender.com/',
   withCredentials: true,
 });
 
@@ -38,7 +38,7 @@ axiosClient.interceptors.response.use(async (response) => {
    
    const response = await axios.create({
       withCredentials:true,
-   }).get('http://localhost:4000/auth/refresh');
+   }).get('https://social-media-g62d.onrender.com/auth/refresh');
    
     if (response.status === "ok") {
       setItem(KEY_ACCESS_TOKEN, response.result.accessToken);
