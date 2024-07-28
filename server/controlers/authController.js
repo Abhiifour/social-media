@@ -109,6 +109,7 @@ const generateAccessToken = (data)=>{
   const token =  jwt.sign(data,process.env.ACCESS_TOKEN_KEY,{
     expiresIn:'1d'
   });
+
   return token;
 }
 //functions to generate refresh token.
